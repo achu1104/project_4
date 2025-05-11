@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ONLINE COURSE REGISTRATION</h1>
+    </header>
+    
+    <section id="courses">
+        <div class="course" id="python">
+            <img src="images/py1.jpg" alt="Python Course">
+            <h2>Python Course</h2>
+            <p>Learn Python from basics to advanced.</p>
+            <p>Fees: $250/month</p>
+            <button onclick="enroll('Python')">Enroll Now</button>
+        </div>
+        <div class="course" id="cpp">
+            <img src="images/C++1.jpg" alt="C++ Course">
+            <h2>C++ Course</h2>
+            <p>Master C++ programming skills.</p>
+            <p>Fees: $200/month</p>
+            <button onclick="enroll('C++')">Enroll Now</button>
+        </div>
+        <div class="course" id="java">
+            <img src="images/java1.webp" alt="Java Course">
+            <h2>Java Course</h2>
+            <p>Comprehensive Java course for all levels.</p>
+            <p>Fees: $500/month</p>
+            <button onclick="enroll('Java')">Enroll Now</button>
+        </div>
+        <div class="course" id="cp">
+            <img src="images/cp1.webp" alt="C Programming">
+            <h2>C Programming</h2>
+            <p>Sharpen your problem-solving skills.</p>
+            <p>Fees: $350/month</p>
+            <button onclick="enroll('C Programming')">Enroll Now</button>
+        </div>
+    </section>
+    
+    <section id="enrolled-section">
+        <h2>Enrolled Students</h2>
+        <button onclick="showEnrolledStudents()">Show Enrolled Students</button>
+        <ul id="students-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
